@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\SchoolMealAPI-master\SchoolMeal\SchoolMeal\SchoolMeal.csproj" />
+    <ProjectReference Include="..\SchoolMeal\SchoolMeal\SchoolMeal.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealApp.Android", "Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealApp.iOS", "SchoolMealApp\SchoolMealApp.iOS\SchoolMealApp.iOS.csproj", "{5D802C58-0DDC-41AC-BDDE-D42B75F8A652}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealApp", "SchoolMealApp\SchoolMealApp\SchoolMealApp.csproj", "{CD95F745-BA91-4D16-A830-63B0A3B31F8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealApp", "SchoolMealApp\SchoolMealApp\SchoolMealApp.csproj", "{CD95F745-BA91-4D16-A830-63B0A3B31F8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMeal", "..\..\..\Downloads\SchoolMealAPI-master\SchoolMeal\SchoolMeal\SchoolMeal.csproj", "{1BAB2241-30A6-427B-8936-46A8DD90A575}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMeal", "SchoolMealApp\SchoolMeal\SchoolMeal\SchoolMeal.csproj", "{1BAB2241-30A6-427B-8936-46A8DD90A575}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

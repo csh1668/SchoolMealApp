@@ -9,7 +9,7 @@
     <StackLayout>
         <Label x:Name="label1" Text="TEXT"/>
         <Button x:Name="button2" Text="이전날" Clicked="Button1_Clicked"/>
-        <Button x:Name="button1" Text="다음날" Clicked="Button2_Clicked/>
+        <Button x:Name="button1" Text="다음날" Clicked="Button2_Clicked"/>
     </StackLayout>
 
 </ContentPage>
