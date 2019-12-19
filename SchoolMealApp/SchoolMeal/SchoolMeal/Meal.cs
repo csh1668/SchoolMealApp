@@ -50,6 +50,7 @@ namespace SchoolMeal
         /// 비동기로 급식메뉴를 나이스 홈페이지에서 불러와서 <see cref="List{T}"/>형태로 제공합니다.
         /// </summary>
         /// <exception cref="FaildToParseException"/>
+        /// <exception cref="WebException"/>
         /// <returns></returns>
         public List<MealMenu> GetMealMenu()
         {
@@ -74,6 +75,12 @@ namespace SchoolMeal
             catch (FaildToParseException)
             {
                 throw new FaildToParseException();
+            }
+            catch (WebException)
+            {
+                List<MealMenu> temp = new List<MealMenu>();
+                temp.Add(null);
+                return temp;
             }
         }
 

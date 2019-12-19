@@ -4,12 +4,47 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SchoolMealApp.MainPage">
-
-    <StackLayout>
-        <Label x:Name="label1" Text="TEXT"/>
-        <Button x:Name="button2" Text="이전날" Clicked="Button1_Clicked"/>
-        <Button x:Name="button1" Text="다음날" Clicked="Button2_Clicked"/>
-    </StackLayout>
-
+             x:Class="SchoolMealApp.MainPage"
+             Title=""
+             x:Name="content"
+             BackgroundImageSource="BackgroundImage.png">
+    <ContentPage.Content>
+        <AbsoluteLayout >
+            <Label x:Name="labeldate"
+                   AbsoluteLayout.LayoutBounds=".5,.25,.7,.5" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   FontSize="14"
+                   FontFamily="{StaticResource NormalFont}"
+                   TextColor="Black"/>
+            <Label x:Name="breakfast" 
+                   AbsoluteLayout.LayoutBounds=".5,.35,.5,.5" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   FontSize="15"
+                   FontFamily="{StaticResource NormalFont}"
+                   TextColor="Black"/>
+            <Label x:Name="lunch" 
+                   AbsoluteLayout.LayoutBounds=".5,.88,.5,.5" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   FontSize="15"
+                   FontFamily="{StaticResource NormalFont}"
+                   TextColor="Black"/>
+            <Label x:Name="dinner" 
+                   AbsoluteLayout.LayoutBounds=".5,1.4,.5,.5" 
+                   AbsoluteLayout.LayoutFlags="All"
+                   FontSize="15"
+                   FontFamily="{StaticResource NormalFont}"
+                   TextColor="Black"/>
+            <ImageButton x:Name="leftButton" 
+                         Source="LeftButton.png"
+                         AbsoluteLayout.LayoutBounds="0.01, 0.55, 0.07, 0.6"
+                         AbsoluteLayout.LayoutFlags="All"
+                         Clicked="Button1_Clicked"/>
+            <ImageButton x:Name="rightButton" Source="RightButton.png"
+                         AbsoluteLayout.LayoutBounds="0.99, 0.55, 0.07, 0.6"
+                         AbsoluteLayout.LayoutFlags="All"
+                         Clicked="Button2_Clicked"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
 </ContentPage>
+
+

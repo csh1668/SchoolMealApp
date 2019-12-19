@@ -6,6 +6,10 @@
              mc:Ignorable="d"
              x:Class="SchoolMealApp.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="BMJUA_ttf.ttf#BM" />
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
